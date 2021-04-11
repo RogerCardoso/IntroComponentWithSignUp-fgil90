@@ -1,5 +1,145 @@
+:root {
+  --paddingDivs: 20px;
+  --marginDivs: 10px;
+  --paddingButton: 15px;
+}
 
+html,
+body {
+  width: 100%;
+  height: auto;
+}
 
+body {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+}
+
+div,
+form {
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 20px 0;
+}
+
+.main-div {
+  position: absolute;
+  display: flex;
+  width: 1080px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-div {
+  display: block;
+  float: left;
+  width: calc(50% - 2 * var(--paddingDivs) - 2 * var(--marginDivs));
+  color: white;
+  padding: var(--paddingDivs);
+  margin: var(--marginDivs);
+  /* background-color: teal; */
+  align-items: center;
+  justify-content: center;
+}
+
+.left-div section {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-div p {
+  margin: 20px 0;
+}
+
+.right-div {
+  display: block;
+  float: right;
+  width: calc(50% - 2 * var(--paddingDivs) - 2 * var(--marginDivs));
+  /* background-color: lightpink; */
+  padding: var(--paddingDivs);
+  margin: var(--marginDivs);
+}
+
+.right-div form {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-info-right-div {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+}
+
+input {
+  width: 90%;
+  border-radius: 5px;
+  border: whitesmoke;
+  border-width: 1px;
+  padding: var(--paddingButton);
+  margin: 5px;
+  color: hsl(246, 25%, 77%);
+  font-weight: bold;
+}
+
+input:default {
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+input:valid {
+    color:black;
+    border: 1px solid black;
+}
+
+input:invalid {
+  color: red;
+  border: 1px solid red;
+}
+
+input:focus {
+    color:black;
+    border: 1px solid black;
+}
+
+.submit-button {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: white !important;
+  font-weight: 700;
+  width: calc(90% + 2 * var(--paddingButton));
+}
+
+span{
+    align-self: flex-end;
+    font-size:11px;
+    color: red;
+    font-style: italic;
+}
+
+form p {
+  font-size: 11px;
+}
+form p a {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
 
 .attribution {
   font-size: 11px;
